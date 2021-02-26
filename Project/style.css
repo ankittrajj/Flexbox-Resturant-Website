@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* ----------------------utility class------------ */
+.container{
+    /* max-width: 120px; */
+    width: 90%;
+    margin: auto;
+}
+
+/*------------------ navbar styling ---------------------------*/
+
+/* for desktop mode ---------- */
+.navbar input[type='checkbox'],
+.navbar .hamburger-lines{
+    display: none;
+}
+.navbar{
+    box-shadow: 0px 5px 10px 0px #aaa ;
+    position:fixed;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    opacity: .7;
+    z-index: 20;
+}
+.navbar .navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 40px;
+}
+.navbar .menu {
+    order: 2;
+    display: flex;
+}
+.navbar .menu li{
+    /* justify-content: center; */
+    list-style: none;
+    margin:1.5rem ;
+    text-transform: capitalize;
+}
+.navbar .menu li a{
+    text-decoration: none;
+    font-size:15px;
+    font-weight: 500;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    transition: .5s ease;
+}
+.navbar .menu li a:hover{
+    color: #000;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    padding: 7px ;
+    text-decoration: underline 2px blue;
+}
+.navbar .logo{
+    order: 1;
+    margin: 2rem;
+    font-size: 30px;
+    text-shadow: 3px 4px 3px gray;  
+}
+.navbar .logo:hover{
+    cursor: pointer;
+}
+/*-------------------------------------------- navbar end ------------------------------------ */
+
+/*-------------------------------------------- section 1 start ---------------------------------------------- */
+.section-container{
+    height: 60vh;
+    background-image: url("/img/header-image2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-container .title{
+    font-size:3rem ;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-decoration: 1.4765px underline blue;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 2px gray;
+
+    /* border: 2px red solid; */
+}
+.section-container .lines{
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom:10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-shadow: 1px 2px 2px gray;
+}
+.section-container .menu-btn{
+    border-radius: 12px;
+    font-size: 15px;
+    margin-top: 32px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border:2px solid green;
+    padding: 1px 5px;
+    background-color: green;
+    color: white;
+}
