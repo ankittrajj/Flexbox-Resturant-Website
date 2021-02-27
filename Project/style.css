@@ -15,7 +15,7 @@ body{
 }
 /* ----------------------utility class------------ */
 .container{
-    /* max-width: 120px; */
+    max-width: 1200px;
     width: 90%;
     margin: auto;
 }
@@ -84,6 +84,7 @@ body{
     height: 60vh;
     background-image: url("/img/header-image2.jpg");
     background-repeat: no-repeat;
+    background-blend-mode:hue;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -100,8 +101,6 @@ body{
     text-decoration: 1.4765px underline blue;
     margin-bottom: 15px;
     text-shadow: 2px 2px 2px gray;
-
-    /* border: 2px red solid; */
 }
 .section-container .lines{
     font-size: 2rem;
@@ -113,13 +112,126 @@ body{
     text-shadow: 1px 2px 2px gray;
 }
 .section-container .menu-btn{
-    border-radius: 12px;
+    border-radius: 20px;
     font-size: 15px;
     margin-top: 32px;
     text-decoration: none;
-    letter-spacing: 2px;
-    border:2px solid green;
-    padding: 1px 5px;
+    letter-spacing: px;
+    padding: 5px 18px;
     background-color: green;
     color: white;
+    text-align: center;
+    box-shadow: 2px 2px 1px black; 
+    
 }
+.section-container .menu-btn:hover{
+    background-color: black;
+    text-decoration: underline 2px solid blue;   
+}
+/*----------------------------------------- section 1 end ---------------------------------------------------- */
+
+
+/* ------------------------------------------section 2 start --------------------------------------- */
+.section2{
+    padding: 10rem 0;
+    background: rgba(206, 204, 204, 0.452);
+   
+}
+.about-container{
+    display: flex;
+    box-shadow: 1px 1px 8px 1px rgba(112, 112, 241, 0.808);
+    border-radius: 20px;
+    animation: border-anim 1s ease-in;
+    
+}
+.about-text .about-heading{
+    font-size: 3rem;
+    text-shadow: 2px 1px 1px gray;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+.about-text .about-line1{
+    font-size: 1.6rem;
+    color: #555;
+    text-decoration: underline 1.5px blue;
+    font-weight: 700;
+    font-size:2rem;
+}
+.about-text .about-line2{
+    font-size: 1.6rem;
+    color: #666;
+    text-align: left;
+    text-align: center;
+}
+.about-line1,.about-line2,.about-heading{
+    text-transform: capitalize;
+    text-align: left;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    animation: text-anim 3s  ease-in-out;
+}
+.about-img{
+    flex: 1 1 200px;
+    padding: 10px;
+    /* border: 2px red solid; */
+}
+.about-img img{
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+    float: right;
+    border-radius: 20px;
+    opacity: .9;
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.664);
+    animation: img-anim 3s  ease-in-out;
+}
+.about-text{
+    flex: 1 1 400px;
+    padding: 30px;
+    /* margin: auto; */
+}
+@keyframes text-anim{
+    0%{
+        transform:translateX(-500px);
+
+    }
+    80%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translate(1);
+
+    }
+}
+@keyframes img-anim{
+    0%{
+        transform:translateX(500px);
+
+    }
+    80%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translate(1);
+
+    }
+}
+@keyframes border-anim{
+    0%{
+        transform:translateY(100px);
+
+    }
+    80%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translate(1);
+
+    }
+}
+/* ------------------------------------------section 2 start---------------------------- */
+
+
